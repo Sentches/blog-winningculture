@@ -1,0 +1,21 @@
+{% extends "blog/base.html" %}
+
+{% block title %}Meu Blog Django{% endblock %}
+
+{% block content %}
+    {% for post in post_list %}
+        <article>
+                <h2 class="title">
+                    <a class="post-title" href="{{ post.get_absolute_url }}">
+                        {{ post.title }}
+                    </a>
+                </h2>
+                <p class="date">
+                    Publicado em {{ post.created }} por {{ post.author }}
+                </p>
+                {{ post.body|linebreaks|truncatewords:50 }} <a class="button" href=" {{ post.get_absolute_url }}">Read More</a>
+        </article>
+        
+    {% endfor %}
+    <hr>
+{% endblock %}
