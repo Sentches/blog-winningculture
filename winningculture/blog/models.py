@@ -16,6 +16,6 @@ class Post(models.Model):
     def get_absolute_url(self):
         return reverse ('blog:detail', kwargs={"slug":self.slug})
 
-        class Meta:
-            ordering = ("-created",)
+    class Meta:
+        ordering = ("-created",)
 
