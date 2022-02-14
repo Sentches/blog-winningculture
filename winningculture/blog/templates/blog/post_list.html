@@ -16,8 +16,11 @@
                 </p>
                 {{ post.body|linebreaks|truncatewords:50 }} <a class="button" href=" {{ post.get_absolute_url }}">Read More</a>
         </article>
-        <hr>    
+        <hr> 
     {% endfor %}
-   
+    <a href="#top" class="arrow">
+        <img src="{% static 'img/arrow.png' %}" alt="arrow">
+    </a>
+    
 {% endblock %}
 

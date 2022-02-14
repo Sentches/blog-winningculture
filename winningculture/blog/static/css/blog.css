@@ -174,15 +174,21 @@ main {
 #icons a {
     height: 56px;
     width: 56px;
-    display: inline-block;
+    /* display: inline-block; */
+    text-align: center;
     margin: 10px;
+}
+
+i {
+    margin-top: 10px;
 }
   
 .footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-content: space-between;
+    flex-direction: column;
+    align-content: center;
     align-items: center;
+    padding: 30px;
 }

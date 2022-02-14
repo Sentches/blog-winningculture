@@ -21,26 +21,22 @@
         <div class="content">
         {% block content %}
         {% endblock %}
-        <a href="/" class="arrow">
-            <img src="{% static 'img/arrow.png' %}" alt="arrow">
-        </a>
+        
         </div>
     </main>
     <footer class="footer">
-        <section id="icons">
-            <a href="#" class="instagram">
-                <img src="{% static 'img/instagram.png' %}" alt="instagram">
+        <div id="icons">
+            <a href="https://www.instagram.com/carlosemaya/" target="_blank" class="instagram">
+                <img class="img" src="{% static 'img/instagram.png' %}" alt="instagram">
             </a>
-            <a href="#" class="linkedin">
-                <img src="{% static 'img/linkedin.png' %}" alt="linkedin">
+            <a href="https://www.linkedin.com/in/carlosmaiaa/" target="_blank" class="linkedin">
+                <img class="img" src="{% static 'img/linkedin.png' %}" alt="linkedin">
             </a>
-            <a href="#" class="github">
-                <img src="{% static 'img/git-hub.png' %}" alt="github">
-            </a>
-            <a href="https://www.google.com" class="flickr"></a>
-            
-        </section>
-        <i>Designed by Carlos Maia | 2022</i>
+            <a href="https://github.com/Sentches" target="_blank" class="github">
+                <img class="img" src="{% static 'img/git-hub.png' %}" alt="github">
+            </a>            
+        </div>
+        <i>Created by Carlos Maia | 2022</i>
     </footer>
 </body>
 

@@ -6,7 +6,7 @@
     <div class="content">
 {% block content %}
     <h2 class="title">
-        <a class="post-title" target="_blank" href="{{ post.get_absolute_url }}">
+        <a class="post-title" href="{{ post.get_absolute_url }}">
             {{ post.title }}
         </a>
     </h2>
@@ -14,7 +14,7 @@
         Publicado em {{ post.created }} por {{ post.author }}
     </p>
     {{ post.body|linebreaks }}
-    <a class="swen" href="/">More Articles</a>
+    <a class="swen" href="http://127.0.0.1:8000/blog">More Articles</a>
 {% endblock %}
 </div>
 </main>
