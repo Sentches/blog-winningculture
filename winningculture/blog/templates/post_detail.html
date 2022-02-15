@@ -18,9 +18,9 @@
     <h3>Comments</h3>
 
     {% if not post.comments.all %}
-        Nobody commented yet...<a href="{% url 'blog:commentview' post.pk %}">Add a comment</a>
+        Nobody commented yet...<a href="{% url 'blog:commentview' %}">Add a comment</a>
     {% else %}
-        <a href="{% url 'blog:commentview' post.pk %}">Add a comment</a>
+        <a href="{% url 'blog:commentview' %}">Add a comment</a>
         {% for comment in post.comments.all %}
             {{ comment.name }}
             {{ comment.date }}

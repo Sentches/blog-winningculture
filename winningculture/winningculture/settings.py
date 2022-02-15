@@ -57,7 +57,8 @@ ROOT_URLCONF = 'winningculture.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        #DIRS variable was empty
+        'DIRS': [os.path.join(BASE_DIR, 'blog/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

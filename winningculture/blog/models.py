@@ -19,3 +19,11 @@ class Post(models.Model):
     class Meta:
         ordering = ("-created",)
 
+class Comment(models.Model):
+    post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
+    name = models.CharField(max_length=255)
+    body = models.TextField()
+    date = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return reverse (self.post.title, self.name, self.post.slug)
