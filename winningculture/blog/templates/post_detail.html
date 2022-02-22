@@ -11,10 +11,10 @@
         </a>
     </h2>
     <p class="date">
-        Publicado em {{ post.created }} por {{ post.author }}
+        Publicado em {{ post.publish }} por {{ post.author }}
     </p>
-    {{ post.body|linebreaks }}
-    <a class="swen" href="http://127.0.0.1:8000/blog">More Articles</a>
+    {{ post.content|linebreaks }}
+    <a class="swen" href="http://127.0.0.1:8000">More Articles</a>
 {% endblock %}
 </div>
 </main>

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Meu Blog Django{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+        <article>
+                <h2 class="title">
+                    <a class="post-title" href="{{ post.get_absolute_url }}">
+                        {{ post.title }}
+                    </a>
+                </h2>
+                <p class="date">
+                    Publicado em {{ post.publish }} por {{ post.author }}
+                </p>
+                {{ post.content|linebreaks|truncatewords:50 }} <a class="button" href=" {{ post.get_absolute_url }}">Read More</a>
+        </article>
+        <hr> 
+    {% endfor %}
+    <a href="#top" class="arrow">
+        <img src="{% static 'img/arrow.png' %}" alt="arrow">
+    </a>
+    
+{% endblock %}
+

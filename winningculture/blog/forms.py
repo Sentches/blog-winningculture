@@ -2,11 +2,12 @@ from msilib.schema import Class
 from django import forms
 from .models import Comment
 
-class AddCommentForm(forms.ModelForm):
+class NewCommentForm(forms.ModelForm):
     class Meta:
         model = Comment
-        fields = ('name', 'body')
+        fields = ('name', 'email', 'content')
         widgets = {
             "name": forms.TextInput(attrs={"class": "col-sm-12"}),
-            "body": forms.Textarea(attrs={"class": "form-control"}),
+            "email": forms.EmailInput(attrs={"class": "col-sm-12"}),
+            "content": forms.Textarea(attrs={"class": "form-control"}),
         }
