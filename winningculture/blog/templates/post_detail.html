@@ -14,7 +14,30 @@
         Publicado em {{ post.publish }} por {{ post.author }}
     </p>
     {{ post.content|linebreaks }}
+    
+    <div class="comment-section">
+
+        {% with comments.count as total_comments %}
+        <h3>
+            {{ total_comments }} comment {{ total_comments|pluralize }}
+        </h3>
+        {% endwith %}
+
+        {% for comment in comments %}
+        Comment {{ forloop.counter }} by {{ comment.name }}
+        on {{ comment.publish }}
+        {{ comment.content|linebreaks }}
+        {% empty %}
+        <p>There are no comments for this post.</p>
+        {% endfor %}
+        <h3>Make a new comment</h3>
+        <form class="comment-form" method="post">
+            {{ comment_form.as_p }}
+            {% csrf_token %}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
     <a class="swen" href="http://127.0.0.1:8000">More Articles</a>
-{% endblock %}
+    {% endblock %}
 </div>
 </main>
