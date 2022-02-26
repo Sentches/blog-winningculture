@@ -14,7 +14,9 @@
                 <p class="date">
                     Publicado em {{ post.created }} por {{ post.author }}
                 </p>
-                {{ post.body|linebreaks|truncatewords:50 }} <a class="button" href=" {{ post.get_absolute_url }}">Read More</a>
+                <div class="postagem">
+                {{ post.content|linebreaks|truncatewords:50 }} <a class="button" href=" {{ post.get_absolute_url }}">Read More</a>
+            </div>
         </article>
         <hr> 
     {% endfor %}
