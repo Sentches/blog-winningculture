@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-{% extends "blog/base.html" %}
-=======
 {% extends "base.html" %}
->>>>>>> Form
 
 {% block title %}{{ post.title }}{% endblock %}
 
@@ -15,28 +11,6 @@
         </a>
     </h2>
     <p class="date">
-<<<<<<< HEAD
-        Publicado em {{ post.created }} por {{ post.author }}
-    </p>
-    {{ post.body|linebreaks }}
-    <hr>
-    <h3>Comments</h3>
-
-    {% if not post.comments.all %}
-        Nobody commented yet...<a href="{% url 'blog:commentview' %}">Add a comment</a>
-    {% else %}
-        <a href="{% url 'blog:commentview' %}">Add a comment</a>
-        {% for comment in post.comments.all %}
-            {{ comment.name }}
-            {{ comment.date }}
-            <br>
-            {{ comment.body }}
-        {% endfor %}
-    {% endif %}
-        <a class="swen" href="{% url 'blog:list' %}">More Articles</a>
-    {% endblock %}
-    
-=======
         Published on {{ post.publish }} by {{ post.author }}
     </p>
     {{ post.content|linebreaks }}
@@ -67,6 +41,5 @@
     </div>
     <!--<a class="swen" href="http://127.0.0.1:8000">More Articles</a>-->
     {% endblock %}
->>>>>>> Form
 </div>
 </main>

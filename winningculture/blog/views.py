@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-from xml.etree.ElementTree import Comment
-from django.views.generic import DetailView, ListView, CreateView
-from .models import Post, Comment
-
-class PostListView(ListView):
-    model = Post 
-
-class PostDetailView(DetailView):
-    model = Post
-
-class CommentView(CreateView):
-    model = Comment
-    template_name = 'add_comment.html'
-    fields = '__all__'
-=======
 from django.shortcuts import render, get_object_or_404, HttpResponseRedirect
 from .models import Post
 from .forms import NewCommentForm
@@ -42,4 +26,3 @@ def post_single(request, post):
     else:
         comment_form = NewCommentForm()
     return render(request, 'post_detail.html', {'post': post, 'comments': user_comment, 'comments': comments, 'comment_form': comment_form})
->>>>>>> Form
