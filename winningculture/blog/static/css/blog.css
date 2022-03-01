@@ -247,6 +247,10 @@ i {
     letter-spacing: .0800rem;
 }
 
+.comment-title {
+    color: #F9A01B;
+}
+
 .corpo-comentario p {
     font-size: 18px;
     font-weight: 500;
