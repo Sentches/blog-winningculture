@@ -1,1 +1,1 @@
-# blog-winningculture
+Miami Heat news Blog using Django
