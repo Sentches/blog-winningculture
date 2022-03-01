@@ -26,7 +26,7 @@ This is my first Django project, I really enjoyed using this library because it 
 
 10 - Now, you can run the server with "python manage.py runserver" and copy the address highlited below and paste it on your browser;
 
-![](/tutorial01.jpg)
+![Screenshot](https://github.com/Sentches/blog-winningculture/blob/main/tutorial01.JPG?raw=true)
 
 There it is! To access the admin area, add "/admin" at the end of the URL and start creating some posts!
 
@@ -34,37 +34,37 @@ There it is! To access the admin area, add "/admin" at the end of the URL and st
 
 On this list, you will find every library I had on my virtual enviroment.
 
-asgiref           3.5.0
-asttokens         2.0.5
-backcall          0.2.0
-black             22.1.0
-click             8.0.3
-colorama          0.4.4
-decorator         5.1.1
-Django            4.0.2
-executing         0.8.2
-ipython           8.0.1
-jedi              0.18.1
-matplotlib-inline 0.1.3
-mypy-extensions   0.4.3
-parso             0.8.3
-pathspec          0.9.0
-pickleshare       0.7.5
-pip               22.0.3
-platformdirs      2.5.0
-prompt-toolkit    3.0.27
-pure-eval         0.2.2
-Pygments          2.11.2
-python-decouple   3.6
-setuptools        60.6.0
-six               1.16.0
-sqlparse          0.4.2
-stack-data        0.1.4
-tomli             2.0.1
-traitlets         5.1.1
-tzdata            2021.5
-wcwidth           0.2.5
-wheel             0.37.1
+- asgiref           3.5.0
+- asttokens         2.0.5
+- backcall          0.2.0
+- black             22.1.0
+- click             8.0.3
+- colorama          0.4.4
+- decorator         5.1.1
+- Django            4.0.2
+- executing         0.8.2
+- ipython           8.0.1
+- jedi              0.18.1
+- matplotlib-inline 0.1.3
+- mypy-extensions   0.4.3
+- parso             0.8.3
+- pathspec          0.9.0
+- pickleshare       0.7.5
+- pip               22.0.3
+- platformdirs      2.5.0
+- prompt-toolkit    3.0.27
+- pure-eval         0.2.2
+- Pygments          2.11.2
+- python-decouple   3.6
+- setuptools        60.6.0
+- six               1.16.0
+- sqlparse          0.4.2
+- stack-data        0.1.4
+- tomli             2.0.1
+- traitlets         5.1.1
+- tzdata            2021.5
+- wcwidth           0.2.5
+- wheel             0.37.1
 
 # Links 
 
