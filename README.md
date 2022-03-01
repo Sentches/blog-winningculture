@@ -26,7 +26,7 @@ This is my first Django project, I really enjoyed using this library because it 
 
 10 - Now, you can run the server with "python manage.py runserver" and copy the address highlited below and paste it on your browser;
 
-![](tutorial01.jpg)
+![](tutorial01.jpeg)
 
 There it is! To access the admin area, add "/admin" at the end of the URL and start creating some posts!
 
