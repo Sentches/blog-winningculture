@@ -33,12 +33,58 @@ body {
 header {
     display: flex;
     height: 16vh;
-    align-items: center;
+    align-items: self-end;
     justify-content: space-between;
-    padding: 0px 40px;
+    padding: 0 0 15px 0;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    height: 4vh;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    align-items: center;
+    padding: 5px 0;
+}
+
+ul {
+    margin: 0px 0 0 40px;
+}
+
+li {
+    color: white;
+    display: inline-block;
+    margin: 0 0 0 0;
+    list-style: none;
+    background-color: inherit;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+li a, a:visited {
+    text-decoration: none;
+    color: #F9A01B;
+    transition: .5s;
+}
+
+li a:hover {
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 0px;
+    text-decoration: none;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: black;
 }
 
 h1 {
+    margin: 0px 50px;
     text-transform: uppercase;
     background-image: linear-gradient(
     -225deg,
@@ -59,7 +105,6 @@ h1 {
     display: inline-block;
     font-size: 60px;
     letter-spacing: 0.5px;
-    
     font-family: Nba heat, sans-serif;
 }
 
