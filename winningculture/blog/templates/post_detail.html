@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 {% extends "blog/base.html" %}
+=======
+{% extends "base.html" %}
+>>>>>>> Form
 
 {% block title %}{{ post.title }}{% endblock %}
 
@@ -11,6 +15,7 @@
         </a>
     </h2>
     <p class="date">
+<<<<<<< HEAD
         Publicado em {{ post.created }} por {{ post.author }}
     </p>
     {{ post.body|linebreaks }}
@@ -31,5 +36,37 @@
         <a class="swen" href="{% url 'blog:list' %}">More Articles</a>
     {% endblock %}
     
+=======
+        Published on {{ post.publish }} by {{ post.author }}
+    </p>
+    {{ post.content|linebreaks }}
+    <hr>
+    <div class="comment-section">
+
+        {% with comments.count as total_comments %}
+        <h3 class="comment-title">
+            {{ total_comments }} Comments 
+        </h3>
+        {% endwith %}
+
+        {% for comment in comments %}
+        <p class="autor-comentario">Comment {{ forloop.counter }} by {{ comment.name }}
+        on {{ comment.publish }}</p>
+        <div class="corpo-comentario">{{ comment.content|linebreaks }}
+        </div>
+        <hr class="line-comentario">
+        {% empty %}
+        <p>There are no comments for this post.</p>
+        {% endfor %}
+        <h3 class="comment-title">Make a new comment</h3>
+        <form class="comment-form" method="post">
+            {{ comment_form.as_p }}
+            {% csrf_token %}
+            <button class="botao-comentario" type="submit">Submit</button>
+        </form>
+    </div>
+    <!--<a class="swen" href="http://127.0.0.1:8000">More Articles</a>-->
+    {% endblock %}
+>>>>>>> Form
 </div>
 </main>

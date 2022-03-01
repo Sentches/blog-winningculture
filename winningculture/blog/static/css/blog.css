@@ -33,12 +33,59 @@ body {
 header {
     display: flex;
     height: 16vh;
-    align-items: center;
+    align-items: self-end;
     justify-content: space-between;
-    padding: 0px 40px;
+    padding: 0 0 15px 0;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    height: 4vh;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    border-bottom: 1px solid rgba(149, 1, 46, 1);
+    ;
+    align-items: center;
+    padding: 5px 0;
+}
+
+ul {
+    margin: 0px 0 0 40px;
+}
+
+li {
+    color: white;
+    display: inline-block;
+    margin: 0 0 0 0;
+    list-style: none;
+    background-color: inherit;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+li a, a:visited {
+    text-decoration: none;
+    color: #F9A01B;
+    transition: .5s;
+}
+
+li a:hover {
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 0px;
+    text-decoration: none;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: black;
 }
 
 h1 {
+    margin: 0px 50px;
     text-transform: uppercase;
     background-image: linear-gradient(
     -225deg,
@@ -59,7 +106,6 @@ h1 {
     display: inline-block;
     font-size: 60px;
     letter-spacing: 0.5px;
-    
     font-family: Nba heat, sans-serif;
 }
 
@@ -191,4 +237,86 @@ i {
     align-content: center;
     align-items: center;
     padding: 30px;
+}
+
+.autor-comentario {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    font-style: italic;
+    letter-spacing: .0800rem;
+}
+
+.comment-title {
+    color: #F9A01B;
+}
+
+.corpo-comentario p {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 0;
+    letter-spacing: .0600rem;
+}
+
+.line-comentario {
+    margin: 0 0 15px 0;
+    width: 50%;
+    height: 2px;
+    background-color: rgba(249, 160, 27, .2);
+    border: 0px;
+}
+
+.comment-section p {
+    text-indent: 0px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.comment-form p {
+    font-size: 12px;
+    text-indent: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form p label {
+    font-size: 18px;
+    padding: 15px 15px;
+}
+
+ .comment-form p input {
+     width: 350px;
+     height: 30px;
+     font-size: 18px;
+ }
+
+ .comment-form p textarea {
+    width: 500px;
+    height: 150px;
+    font-size: 18px;
+}
+
+.botao-comentario {
+    display: flex;
+    background-color: black;
+    border: 1px solid;
+    width: 284px;
+    height: 57px;
+    color: #F9A01B;
+    border-radius: 10px 10px 50px 10px;
+    justify-content: center;
+    margin: 30px auto;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 800;
+    transition: .5s;
+}
+
+.botao-comentario:hover {
+    padding: 20px;
 }
