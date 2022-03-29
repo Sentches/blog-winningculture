@@ -4,6 +4,10 @@
 
 This is my first Django project, I really enjoyed using this library because it gives you a lot of power and can save you a lot of valuable time building a web application. My goal was to create a blog about my favorite team in the NBA, the Miami Heat. My biggest challenge was building the comment section, I spent a lot of time trying to understand how to use Django Forms, create Views and how I could link the comment to a post.
 
+![Home](https://github.com/carlosdamaia/blog-winningculture/blob/main/home.png?raw=true)
+
+![Comments](https://github.com/carlosdamaia/blog-winningculture/blob/main/comments.png?raw=true)
+
 ## Pip List
 
 On this list, you will find every library I had on my virtual enviroment.
